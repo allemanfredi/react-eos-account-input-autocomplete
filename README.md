@@ -24,6 +24,8 @@ npm install react-eos-account-input-autocomplete
 
 ```js
 
+  import EosAccountInputAutocomplete from 'react-eos-account-input-autocomplete'
+
   const [value, setValue] = useState('')
 
   ....
