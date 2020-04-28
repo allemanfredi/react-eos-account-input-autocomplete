@@ -1,11 +1,17 @@
 {
-  "name": "react-eos-input-autocomplete",
-  "version": "0.1.0",
-  "private": true,
+  "name": "react-eos-account-input-autocomplete",
+  "version": "0.1.1",
+  "private": false,
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "async-mutex": "^0.2.2",
+    "eosjs": "^20.0.3",
+    "node-fetch": "^2.6.0",
+    "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
@@ -14,11 +20,19 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "prettier --config ./.prettierrc --write  \"./src/**/*.+(js|json|jsx)\"",
+    "publish:npm": "rm -rf dist && mkdir dist &&  babel src/components -d dist --copy-files && npm publish"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
+  "license": "MIT",
+  "keywords": [
+    "eos",
+    "react",
+    "blockchain"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",
@@ -30,5 +44,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/preset-react": "^7.9.4"
   }
 }
