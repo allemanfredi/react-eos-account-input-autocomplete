@@ -11,7 +11,6 @@
     "async-mutex": "^0.2.2",
     "eosjs": "^20.0.3",
     "node-fetch": "^2.6.0",
-    "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
@@ -52,6 +51,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
-    "@babel/preset-react": "^7.9.4"
+    "@babel/preset-react": "^7.9.4",
+    "prettier": "^2.0.5"
   }
 }
